@@ -1338,25 +1338,25 @@
 
 // Fetch the total number of duplicate characters in a given string.
 
-// Input- Mississippi
-// Output -3 
-// Explain - i,s,p are duplicate characters
-let string="Mississippi"
-function dub_char(str){
-    str=str.split("")
-  //  console.log(str.length)
-    let tmp_arr=[]
-    for(let i=0;i<str.length;i++){
-        for(let j=i+1;j<str.length;j++){
-           // console.log("at here",str[i] == str[j] )
-            if(str[i] == str[j] && !tmp_arr.includes(str[i])){
-                 console.log("at here1")
-                tmp_arr.push(str[i])
-            }
-        }
-    }
-    return tmp_arr.length
-}
+// // Input- Mississippi
+// // Output -3 
+// // Explain - i,s,p are duplicate characters
+// let string="Mississippi"
+// function dub_char(str){
+//     str=str.split("")
+//   //  console.log(str.length)
+//     let tmp_arr=[]
+//     for(let i=0;i<str.length;i++){
+//         for(let j=i+1;j<str.length;j++){
+//            // console.log("at here",str[i] == str[j] )
+//             if(str[i] == str[j] && !tmp_arr.includes(str[i])){
+//                  console.log("at here1")
+//                 tmp_arr.push(str[i])
+//             }
+//         }
+//     }
+//     return tmp_arr.length
+// }
 
-console.log(dub_char(string))
+// console.log(dub_char(string))
 
