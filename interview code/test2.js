@@ -182,30 +182,120 @@
 // console.log(create_array(users))
 
 
-const fruit = [
-    { a: 4, b: 7, c: 3 ,g:8},
-    { d: 6, e: 4, f: 8, g:1 },
-    { b: 5, g: 7, a: 7 },
+// const fruit = [
+//     { a: 4, b: 7, c: 3 ,g:8},
+//     { d: 6, e: 4, f: 8, g:1 },
+//     { b: 5, g: 7, a: 7 },
 
-];
+// ];
 
-function count_fruit(arr) {
+// function count_fruit(arr) {
+//     let obj = {}
+//     for (const iterator of arr) {
+//         //  console.log(iterator)
+//         for (const key in iterator) {
+//             // let obj={}
+//             console.log(iterator[key])
+//             if (obj[key]) {
+//                 obj[key] = obj[key] + iterator[key]
+
+//             } else {
+//                 obj[key] = iterator[key]
+//             }
+
+//         }
+//     }
+//     return obj
+// }
+
+// console.log(count_fruit(fruit))
+
+// let arr = [2, 4, 11, 2, 2, 4, 9]
+
+// function sort(array) {
+
+//     for (let i = 0; i < array.length - 1; i++) {
+//         for (let j = 0; j < array.length - 1-i; j++) {
+
+//             if (array[j] <array[j + 1]) {
+//                 let tmp = array[j]
+//                 array[j] = array[j + 1]
+//                 array[j + 1] = tmp
+//             }
+
+//         }
+
+//     }
+//     return array
+// }
+
+// console.log(sort(arr))
+
+// let arr = [1, 2, 3, 4, 6, 9,14,16]
+
+// function miss(arr) {
+//     let diff = arr[0]
+//     for (let i = 0; i < arr.length; i++) {
+//         let cur = arr[i] - i;
+//         if (diff != cur) {
+
+//             while (cur!=diff) {
+//             console.log(i + diff)
+
+//                 diff++;
+//             }
+
+//         }
+//     }
+// }
+// miss(arr)
+
+//binary serach
+
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// function binary(arr, tagget) {
+
+//     let r = 0
+//     let l = arr.length - 1
+//     while (l >= r) {
+//         let mid = Math.floor((r + l) / 2)
+
+//         if (tagget == arr[mid]) {
+
+//             return mid;
+//         }
+
+//         if (tagget > arr[mid]) {
+//             r++
+//         } else {
+//             l--
+//         }
+//     }
+//     return -1
+// }
+
+// console.log(binary(a,16))
+
+let a = [11, 22, 11, 33, 1, 2, 3, 4, 5, 6, 22, 3]
+
+function dubonly(arr) {
     let obj = {}
-    for (const iterator of arr) {
-        //  console.log(iterator)
-        for (const key in iterator) {
-            // let obj={}
-            console.log(iterator[key])
-            if (obj[key]) {
-                obj[key] = obj[key] + iterator[key]
-
-            } else {
-                obj[key] = iterator[key]
-            }
-
-        }
+    for (const i of arr) {
+        obj[i] = (obj[i] || 0) + 1
     }
     return obj
 }
 
-console.log(count_fruit(fruit))
+console.log(dubonly(a))
+
+console.log("1");   //
+
+setTimeout(() => {
+	console.log("timeout")
+},0);
+
+Promise.resolve().then(() => {
+	console.log("promise")
+})
+console.log("2"); 

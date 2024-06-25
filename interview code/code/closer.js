@@ -3,14 +3,19 @@ function a() {
     let a=5;
     function b() {
     console.log(a)
+  //  a=9000 
     }
-    a=9000    ///---> funtion rebember its referance where it was pointing...,so printing 9000
+   a=9000    ///---> funtion rebember its referance where it was pointing...,so printing 9000
    return b
 
 }
 let z=a()
 console.log(z)
 z()
+
+
+
+
 
 // here we can see even function a() is vanished from the execution context , but the function b() 
 //still remberber the where it was pointing.
