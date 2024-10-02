@@ -231,7 +231,7 @@
 
 // console.log(sort(arr))
 
-// let arr = [1, 2, 3, 4, 6, 9,14,16]
+// let arr = [1, 2, 3, 4, 6, 9,14,16] //del 6
 
 // function miss(arr) {
 //     let diff = arr[0]

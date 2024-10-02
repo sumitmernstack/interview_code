@@ -1,0 +1,19 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  manager INTEGER
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (1, 'Clark', 3);
+INSERT INTO EMPLOYEE VALUES (2, 'Dave', 3);
+INSERT INTO EMPLOYEE VALUES (3, 'Ava', null);
+INSERT INTO EMPLOYEE VALUES (4, 'b', 2);
+INSERT INTO EMPLOYEE VALUES (5, 'c', 2);
+INSERT INTO EMPLOYEE VALUES (6, 'd', 3);
+
+
+SELECT  e.name, m.name from EMPLOYEE e inner JOIN EMPLOYEE m on e.manager=m.empId;
+

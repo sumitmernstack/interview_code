@@ -30,7 +30,7 @@ function two_pointer_sum(arr, target) {
         if (sum == target) {
             return `${right}, ${left}`
         }
-
+// [2, 7, 9, 23]
         if (target > sum) {
             right++
         } else {

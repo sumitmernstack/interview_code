@@ -11,4 +11,4 @@ function unique(arr){
     return tmp
 }
 
-console.log(unique(arr))
+console.log(unique(arr)) 

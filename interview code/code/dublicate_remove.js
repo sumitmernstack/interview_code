@@ -26,5 +26,3 @@ function removeDuplicates(array) {
     return result;
 }
 console.log(removeDuplicates(array))
-
-//  

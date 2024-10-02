@@ -8,3 +8,4 @@ id	emp	    manager
 SELECT e.emp ,m.manager FROM employee e inner join employee m 
 
 on e.id=m.id;
+//

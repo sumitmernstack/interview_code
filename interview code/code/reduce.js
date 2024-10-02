@@ -9,7 +9,7 @@ let b = arr.reduce((acc, curr) => {
    if (curr > acc) {
       acc = curr
    }
-   return acc
+   return acc 
 }, 0)
 
 console.log(b)

@@ -2,11 +2,27 @@ function countOccurance(str) {
   const cntObj = {};
   for (const iterator of str) {
     //  cntObj[iterator]
-    cntObj[iterator] = (cntObj[iterator] || 0) + 1
+    cntObj[iterator] = (cntObj[iterator] || 0) + 1 
   }
   return cntObj;
 
 }
+
+/**
+ * 
+The line obj[element] is used to access or create a property in the obj object where the property name is the value of element (which represents each character from the string during the loop).
+
+Detailed breakdown:
+element: This represents each character from the string as you loop through the array of characters. For example, if the first character is 'm', then element will be 'm'.
+
+obj[element]:
+
+If obj already has a property with the name matching the current element, it will access that property. For example, if element is 'm' and obj has a property named 'm', it will retrieve its value (which is the count of how many times 'm' has occurred so far).
+If obj does not have a property with the name matching the current element, JavaScript will create that property on the fly. So when the first character 'm' is encountered, obj['m'] will be created.
+Here’s an example:
+
+
+ */
 
 const res = countOccurance("hellow")
 //console.log(res)
@@ -31,12 +47,18 @@ let c = people.reduce((acc, curr) => {
 console.log(c);
 
 
-// const fruit = [
-//   { a: 4, b: 7, c: 3 },
-//   { d: 6, e: 4, f: 8 },
-//   { b: 5, g: 7, a: 7 },
+const fruit = [
+  { a: 4, b: 7, c: 3 },
+  { d: 6, e: 4, f: 8 },
+  { b: 5, g: 7, a: 7 }
+];
 
-// ];
+
+
+
+
+
+
 
 // let cnt={};
 // fruit.forEach(ele => {
