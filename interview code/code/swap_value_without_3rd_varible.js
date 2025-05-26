@@ -6,3 +6,12 @@ b=a^b
 a=a^b
 
 console.log(a,b)
+
+
+
+
+let str1 = "hello", str2 = "world";
+[str1, str2] = [str2, str1]; // Destructuring str1ssignment
+
+
+console.log(str1,str2)

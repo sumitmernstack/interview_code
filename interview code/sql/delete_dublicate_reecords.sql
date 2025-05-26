@@ -17,3 +17,6 @@ id   name
 
 
 delete from emp where id not in(select min(id) from emp group by name)
+
+DELETE FROM USERS WHERE ID  IN(SELECT  MIN(id) FROM USERS GROUP BY name, email HAVING COUNT(NAME) >1 )
+--  SELECT  MIN(i

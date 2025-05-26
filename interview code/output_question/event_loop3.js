@@ -1,6 +1,6 @@
 
 
-console.log("Start");  
+console.log("Start");  //1
 
 async function asyncFunc() {
  console.log("Async Function Start");
@@ -9,7 +9,7 @@ async function asyncFunc() {
 }
 
 function syncFunc() {
- console.log("Sync Function");
+ console.log("Sync Function");//2
 }
 
 async function run() {
@@ -20,6 +20,12 @@ async function run() {
 
 run();
 console.log("End"); 
+//start,end,Sync Function,"After Async",Async Function Start,Async Function End
+
+//Start,Sync Function, Async Function Start ,end ,Async Function End,After Async
+
+//start , Sync Function", Async Function Start, End, Async Function End,After Asyn
+
 
 
 

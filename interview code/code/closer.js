@@ -5,7 +5,8 @@ function a() {
     console.log(a)
   //  a=9000 
     }
-   a=9000    ///---> funtion rebember its referance where it was pointing...,so printing 9000
+   a=9000    // // Updating `a` before returning `b`
+   // ///---> funtion rebember its referance where it was pointing...,so printing 9000
    return b
 
 }
@@ -32,3 +33,19 @@ for (var i = 0; i <=5; i++) {
 }
 }
 d()
+
+
+// function along with its lexical scope they are bundled together they formed closer,
+//even if parent function got finished the inner function still rebember where the varible is pointing.
+
+function closerParent() {
+  let a=910;
+  function closerChild() {
+    console.log(a)
+    
+  }
+  return closerChild
+}
+
+let closer=closerParent()
+closer()

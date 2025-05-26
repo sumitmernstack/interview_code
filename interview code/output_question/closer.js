@@ -4,10 +4,12 @@ var x = 23;
   var x = 43;  // This x is local to the IIFE
   
   (function random(){
-    console.log(x);  // Logs undefined due to hoisting, because x is definded at lin eno 9
+    console.log('7----->',x);  // Logs undefined due to hoisting, because x is definded at lin eno 9
     x++;             // x is undefined here, so x++ results in NaN
     console.log(x);  // Logs NaN
-    var x = 21;      // Local x is declared and initialized to 21
+   var  x = 21;      // Local x is declared and initialized to 21
   })();
-
+console.log("12----->",x); 
 })();
+
+console.log('15------>',x); 

@@ -50,13 +50,25 @@ console.log(c);
 const fruit = [
   { a: 4, b: 7, c: 3 },
   { d: 6, e: 4, f: 8 },
-  { b: 5, g: 7, a: 7 }
+  { b: 5, g: 7, a: 7 ,c:22}
 ];
 
-
-
-
-
+function occerr(arr){
+let obj={}
+  for (const ele of arr) {
+//console.log(ele)
+  for(nest in ele ){
+    //console.log(nest)
+    if(obj[nest]){
+    obj[nest]=obj[nest] + ele[nest]
+    }else{
+    obj[nest]=ele[nest]
+   }
+  }
+}
+return obj
+}
+console.log(occerr(fruit))
 
 
 

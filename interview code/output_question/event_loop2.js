@@ -2,7 +2,7 @@
 
 console.log("1");
 
-const v = (getDetail("2"))
+const v = ( getDetail("2"))
 
 console.log(v)
 
@@ -14,10 +14,10 @@ console.log(v)
 console.log(v): Since v is a promise that hasn’t been resolved yet, 
 it will print Promise { <pending> }.
  */
-
+ 
 console.log("3");
 
- function getDetail(id){ 
+async function  getDetail(id){ 
 
   setTimeout(async () => {
 
@@ -28,4 +28,7 @@ console.log("3");
   }, 2000);
 }
 
-//op ----> 1,undefine(pending),3,2
+//op ----> 1
+// undefined
+// 3
+// 2

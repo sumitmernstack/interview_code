@@ -31,4 +31,11 @@ function test_filter2(arr) {
     return array_val
 }
 
+function test_filter3(arr) {
+    let array_val = arr.filter((x)=> {
+        return x % 2 ==0
+    })
+    return array_val
+}
+console.log("-->",test_filter3(array3))
 console.log(test_filter2(array3))

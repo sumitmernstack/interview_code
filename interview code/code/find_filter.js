@@ -1,3 +1,12 @@
+// find()
+// Returns the first matching element in the array.
+//Returns undefined if no match is found.
+
+
+// filter()
+// Returns all matching elements in a new array.
+// Returns an empty array [] if no matches are found.
+
 
 //crfeate a array which are having same relation from the two array
 let arr_emp = [

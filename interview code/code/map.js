@@ -17,23 +17,40 @@ const people = [
     { last_name: 'Brown', age: 45 }
 ];
 
-function name_map(arr) {
 
-    let tmp = arr.filter((x)=> x.age>30).map((x)=>x.last_name) // arr.map((x) => x.last_name )
-    return tmp
+function mapfun(arr) {
+    let data=arr.filter((x)=>x.age >25).map((x)=>x.last_name + " "+ " " + x.age)
+    return data
 }
+console.log(mapfun(people))
 
 
-console.log(name_map(people))
 
 
-function map_test(){
-    let t=people.filter((a)=>a.age  >30).map((x)=>{
+
+
+
+
+
+
+
+// function name_map(arr) {
+
+//     let tmp = arr.filter((x)=> x.age>30).map((x)=>x.last_name) // arr.map((x) => x.last_name )
+//     return tmp
+// }
+
+
+// console.log(name_map(people))
+
+
+// function map_test(){
+//     let t=people.filter((a)=>a.age  >30).map((x)=>{
          
-      return  x.last_name + x.age
-    })
+//       return  x.last_name + x.age
+//     })
 
-    return t 
-}
+//     return t 
+// }
 
-console.log( map_test())
+// console.log( map_test())

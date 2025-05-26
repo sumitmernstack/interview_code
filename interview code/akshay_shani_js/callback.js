@@ -68,3 +68,28 @@ processOrder();
 
 
 
+function a(name,callback){
+    console.log(name)
+    callback()
+}
+
+function b(){
+    console.log(5);
+}
+
+a("sumit",b)
+
+//callback is a special type of function which is passed as argument which is executed after 
+// the async operation  get compleated.
+
+
+function parent(str,callback) {
+    console.log(`hi ${str}`)
+    callback()
+}
+
+function child(val) {
+    console.log(`hi ${val}`)
+}
+
+parent("sumit",child('keshari'))

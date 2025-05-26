@@ -24,3 +24,22 @@ console.log(result)
 }).catch((err)=>{
     console.log(err)
 })
+
+
+let pro=new Promise((reslove,reject)=>{
+if(flag){
+    reslove("jdhfjkshdkj")
+}else{
+    reject("dhdhdhdhddh")
+}
+})
+
+pro.then((res)=>{
+console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+// function pr(params) {
+//    let flag=true
+//    if(flag) 
+// }

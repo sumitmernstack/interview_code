@@ -12,6 +12,40 @@ setTimeout(() => console.log(6));
 
 console.log(7);
 
+1,7,3,5,2,6,4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 1 (synchronous code)
 // 7 (synchronous code)
